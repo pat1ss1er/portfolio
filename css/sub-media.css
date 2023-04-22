@@ -1,0 +1,166 @@
+@media all and (max-width:767px) {
+/* 브라우저 가로폭이 767px이하일때 적용될 css (스마트폰) */
+    html{
+        /* background-color: green; */
+        font-size: 14px;
+    }
+    main{
+        margin: 10px;
+    }
+    .title > h1{
+        font-size: 15vw;
+        margin-bottom: 1rem;
+    }
+    .title > h5{
+        font-size: 6vw;
+    }
+    .info-wrap{
+        width: 70vw;
+    }
+    .info{
+        height: max-content;
+        /* align-self: flex-start; */
+        position: initial;
+    }
+    .info-left, .info-right{
+        position: initial;
+        margin-left: 2rem;
+        width: calc(70vw - 2rem);
+        min-width: initial;
+    }
+    .info-left{
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .computer-img{
+        width: 80vw;
+        height: 53.5vw;
+    }
+    .img-wrap{
+        width: 56vw;
+        height: 37.4vw;
+        top: 6.1vw;
+        border-radius: 1.1vw 1.1vw 0 0;
+    }
+    .computer-img-alert{
+        top: -5vw;
+        width: max-content;
+        max-width: 70vw;
+        font-size: 3vw;
+    }
+    .computer-img-alert > p > img{
+        width: 3vw;
+        height: 3vw;
+        
+    }
+
+    .mobile-s{
+        width: 20vw;
+        height: 40vw;
+    }
+    .mobile-wrap{
+        margin-left: 1vw;
+        width: 17.6vw;
+        height: 36.3vw;
+        margin-top: 3vw;
+        border-radius: 0 0 2.6vw 2.6vw;
+    }
+    .btn-container{
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+    .btn-wrap{
+        margin-bottom: 0;
+    }
+    .source{
+        width: 80vw;
+        margin-bottom:5rem;
+    }
+    .source > h5{
+        font-size: 6vw
+    }
+    .source > h5::after{
+        width: 2rem;
+        left: calc(100% + 1rem);
+    }
+    .source-grid{
+        grid-template-columns: 1fr;
+    }
+    .design-img-box{
+        width: 100%;
+        height: 100%;
+    }
+    .home-btn{
+        right: 10px; top: 10px;
+        padding: 0.8rem 1.6rem;
+        font-size: 0.8rem;
+
+    }
+}
+
+ 
+
+ 
+
+@media all and (min-width:768px) and (max-width:1023px) {
+/* 브라우저 가로폭이 768~1023px일때 적용될 css (태블릿) */
+    html{
+        /* background-color: blue; */
+        font-size: 15px;
+    }
+    main{
+        margin: 30px;
+    }
+    .title > h1{
+        font-size: 15vw;
+    }
+    .title > h5{
+        font-size: 6vw;
+    }
+    .computer-img{
+        width: 80vw;
+        height: 53.5vw;
+    }
+    .img-wrap{
+        width: 56vw;
+        height: 37.4vw;
+        top: 6.1vw;
+        border-radius: 1.1vw 1.1vw 0 0;        
+    }
+    .computer-img-alert{
+        top: 0;
+        width: max-content;
+    }
+    .mobile-s{
+        width: 20vw;
+        height: 40vw;
+    }
+    .mobile-wrap{
+        margin-left: 1vw;
+        width: 17.6vw;
+        height: 36.3vw;
+        margin-top: 3vw;
+        border-radius: 0 0 2.6vw 2.6vw;
+    }
+    .source{
+        width: 80vw;
+    }
+    .source > h5{
+        font-size: 6vw
+    }
+    .source-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .home-btn{
+        right: 30px; top: 30px;
+    }
+}
+
+ 
+
+@media all and (min-width:1024px) {
+/* 브라우저 가로폭이 1024px이상일때 적용될 css (PC) */
+    html{
+        /* background-color: red; */
+    }
+}

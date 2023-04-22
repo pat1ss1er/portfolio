@@ -1,0 +1,308 @@
+@keyframes titletext2{
+    0%{
+        opacity: 0;
+        height: 0;
+        margin: 0;
+    }
+    75%{
+        opacity: 0;
+        height: 35vw;
+    }
+    100%{
+        opacity: 1;
+        height: 35vw;
+    }
+}
+@keyframes titletext3{
+    0%{
+        opacity: 0;
+        width: 0;
+        margin: 0;
+    }
+    75%{
+        width: 42vw;
+        opacity: 0;
+        margin: 0 3vw;
+    }
+    100%{
+        width: 42vw;
+        opacity: 1;
+        margin: 0 3vw;
+    }
+}
+
+@media all and (max-width:767px) {
+/* 브라우저 가로폭이 767px이하일때 적용될 css (스마트폰) */
+    html{
+        font-size: 14px;
+    }
+    .header-flex{
+        display: none;
+    }
+    .navigator{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        top: 2.5vw; left: 2.5vw;
+        background-image: url(../img/icon/hambergermenu-48px.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mobile-nav-wrap{
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        right: 100%;
+        width: 100vw;
+        height: 100vh;
+    }
+    .mobile-nav-wrap{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobile-nav-wrap > h1{
+        color: var(--var-maincolor);
+        font-weight: 900;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .mobile-nav-wrap > ul{
+    }
+    .mobile-nav-wrap > ul > li{
+        margin: 1rem;
+    }
+    .mobile-nav-wrap > ul > li > a{
+        color: #fff;
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    .mobile-nav-wrap > ul > li.active > a{
+        color: var(--var-maincolor);
+    }
+    .half{
+        width: 16vw;
+        height: 32vw;
+        border-radius: 0 32vw 32vw 0;
+    }
+    .circle-left{
+        margin-bottom: -8vw;
+    }
+    .circle-right{
+        margin-top: -8vw;
+    }
+    .title-text{
+        animation: titletext2 2s ease-in-out;
+        width: initial;
+        height: 35vw;
+        /* height: ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .title-text > p{
+        font-size: 2.5vw !important;
+        text-align: center !important;
+        margin: 0;
+    }
+    .title-wrap{
+        flex-direction: column;
+    }
+    .circle-left{
+        transform: rotate(270deg);
+    }
+    .circle-right{
+        transform: rotate(90deg);
+    }
+    .title-text > h1{
+        font-size: 10.4vw;
+        margin-bottom: 0.5rem;
+    }
+    .title-text > h2{
+        font-size: 9.2vw;
+    }
+    .scroll-icon{
+        width: 4rem;
+        height: 3rem;
+    }
+    .aboutme-flex{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .aboutme-left{
+        /* height: 40vh; */
+        margin-right: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+    .aboutme-right{
+        height: 100vh;
+        margin-left: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    .profile-img{
+        width: 90vw;
+        height: 40vh;
+    }
+    .profile-img > p{
+        margin-top: 0.5rem;
+    }
+    .profile-img-after{
+        color: #fff;
+    }
+    .profile-img-before{
+        color: #fff;
+    }
+    .profile-content{
+        width: 90vw;
+    }
+    .profile-content > h1{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    .profile-content > h3{
+        font-size: 1.5rem;
+    }
+    .profile-content > p{
+        padding-bottom: 1rem;
+        line-height: 1.4;
+    }
+    .profile-content > .profile-content-after{
+        bottom: 0;
+        top: 100%;
+        left: initial;
+    }
+    .profile-box{
+        grid-gap: 0.5rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+    .profile-grid > p{
+        line-height: 1.2;
+    }
+}
+@media all and (min-width:768px) and (max-width:1023px) {
+/* 브라우저 가로폭이 768~1023px일때 적용될 css (태블릿) */
+    html{
+        font-size: 15px;
+    }
+    .header-flex{
+        /* background-color: blue; */
+        margin:3rem;
+        margin-bottom: 0;
+    }
+    .header-flex a{
+        font-size: 1.3rem;
+    }
+    .navigator{
+        right: 2rem;
+    }
+    .half{
+        width: 10.8vw;
+        height: 21.6vw;
+        border-radius: 0 21.6vw 21.6vw 0;
+    }
+    .title-text{
+        animation: titletext3 2s ease-in-out;
+        width: 42vw;
+        margin: 0 3vw;
+    }
+    .title-text > p{
+        font-size: 1.8vw !important;
+    }
+    .title-text > h1{
+        font-size: 6.24vw;
+        margin-bottom: 0.5rem;
+    }
+    .title-text > h2{
+        font-size: 5.52vw;
+    }
+    .aboutme-flex{
+        flex-direction: column;
+        margin-top: 100px;
+        height: 100vh;
+    }
+    .aboutme-left{
+        height: 40vh;
+        margin-right: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .aboutme-right{
+        height: 60vh;
+        margin-left: 0;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    .profile-img{
+        width: 90vw;
+        height: 30vh;
+    }
+    .profile-img-before{
+        color: #fff;
+    }
+    .profile-content{
+        width: 90vw;
+    }
+    .profile-content > .profile-content-after{
+        bottom: 0;
+        top: 100%;
+        left: initial;
+    }
+}
+
+ 
+@media all and (min-width:1024px)  and (max-width:1440px) {
+    html{
+    }
+    .header-flex{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .navigator{
+        right: 2rem;
+    }
+    .aboutme-left{
+        margin-right: 3vw;        
+    }
+    .aboutme-right{
+        margin-left: 3vw;
+    }
+    .profile-img{
+        width: 30vw;
+        height: 40vw;
+    }
+    .profile-content{
+        width: 40vw;
+    }
+    .profile-content > .profile-content-after{
+        font-size: 10vw;
+        left: -3vw;
+        opacity: 0.3;
+    }
+    .profile-img > .profile-img-after{
+        font-size: 5vw;
+        top: -6vw; left: 0;
+    }
+    .profile-img > .profile-img-before{
+        font-size: 5vw;
+        bottom: 0;
+        left: -6vw;
+    }
+}
